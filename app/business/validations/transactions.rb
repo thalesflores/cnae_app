@@ -5,7 +5,8 @@ module Validations
     end
 
     def self.valid_transactions?(code)
-      Cnae.types.value?(code)
+      valid = ["1", "4"]
+      valid.include?(code)
     end
   end
 end
