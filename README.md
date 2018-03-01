@@ -6,19 +6,27 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  - 2.4.1
 
 * System dependencies
+  - Sqlite for development environment
+  - Postgresql for production environment
+  - Rails 5.1.5
 
 * Configuration
+  - `bundle install` for installing gems before use for the first time
+  - It's necessary to declare your locals variables, based on the .env.development.sample
+  - To generate TOKEN is necessary run in `IRB` or `rails console` the following code ```SecureRandom.uuid```
 
 * Database creation
+  - ```bundle exec rails db:create db:migrate```
 
 * Database initialization
-
+  - `bundle exec rails db:seed`
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Endpoints usage
+  - To request and save transactions from the csv file is necessary run `your_uri/api/v1/cnaes/save` passing TOKEN in header
+  - To select all transactions in database you must run `your_uri/api/v1/cnaes` passing TOKEN in header
+  - In the select endpoint is possible to pass the following filters `type, value, cpf and card`. Those filters could be passed like this `your_uri/api/v1/cnaes?type=credit`
 
-* Deployment instructions
-
-* ...
