@@ -10,15 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180227201437) do
+ActiveRecord::Schema.define(version: 20180301014324) do
 
   create_table "cnaes", force: :cascade do |t|
-    t.string "type", limit: 1
-    t.date "date"
+    t.integer "type_id"
+    t.string "date"
     t.string "value"
-    t.string "cpf", limit: 11
-    t.string "card", limit: 12
-    t.time "time"
+    t.string "cpf"
+    t.string "card"
+    t.string "time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["type_id"], name: "index_cnaes_on_type_id"
+  end
+
+  create_table "types", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
