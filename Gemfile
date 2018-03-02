@@ -14,6 +14,16 @@ group :development, :test do
   gem 'byebug'
   # Ruby gem to load environment variables
   gem 'dotenv-rails'
+  #tests
+  gem 'rspec-rails', '~> 3.7'
+
+  gem 'database_cleaner'
+
+  gem 'vcr', '~> 3.0.3'
+
+  gem 'webmock'
+
+  gem 'factory_bot_rails' 
 end
 
 group :development do
@@ -21,4 +31,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+group :production do
 end
