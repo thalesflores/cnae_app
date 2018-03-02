@@ -1,7 +1,30 @@
 module Api
   module V1
     class CnaesController < ::ApplicationController
+      include Swagger::Docs::Methods
+
       before_action :auth_token
+
+      swagger_controller :cnaes, "Cnaes Api"
+      swagger_api :index do
+        summary "Fetches all Cnaes items"
+        notes "List all Cnaes in database"
+        param :query, :type, :string, :optional, "Transaction type"
+        param :query, :value, :string, :optional, "Transaction value"
+        param :query, :cpf, :string, :optional, "Transaction owner document"
+        param :query, :card, :string, :optional, "Transaction card number"
+        response :success
+        response :forbidden, "Token was not passed in request header"
+        response :unauthorized
+      end
+
+      swagger_api :save do
+        summary "Create Cnaes items"
+        notes "Create Cnaes that exists in cvs file"
+        response :success
+        response :forbidden, "Token was not passed in request header"
+        response :unauthorized
+      end
 
       def index
         @transactions = Cnae.where(nil)
@@ -27,7 +50,7 @@ module Api
         filtering.each do |key, value|
           @transactions = @transactions.public_send(key, value) if value.present?
         end
-        @transactions 
+        @transactions
       end
 
       def filtering

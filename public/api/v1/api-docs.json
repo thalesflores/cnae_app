@@ -1,0 +1,16 @@
+{
+  "apiVersion": "1.0",
+  "swaggerVersion": "1.2",
+  "basePath": "localhost:300",
+  "apis": [
+    {
+      "path": "/api/v1/cnaes.{format}",
+      "description": "Cnaes Api"
+    }
+  ],
+  "authorizations": null,
+  "info": {
+    "title": "Cnae API",
+    "description": "API to save and show cnae transactions"
+  }
+}
