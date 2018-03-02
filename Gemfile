@@ -8,6 +8,8 @@ ruby '2.5.0'
 gem 'puma', '~> 3.7'
 # Http request
 gem 'httparty', '~> 0.16.0'
+# Ruby gem to load environment variables
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
 
 # documentation
 gem 'swagger-docs'
@@ -17,8 +19,6 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # Ruby gem to load environment variables
-  gem 'dotenv-rails'
   #tests
   gem 'rspec-rails', '~> 3.7'
 
