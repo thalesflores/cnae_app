@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gist.githubusercontent.com/SauloSilva/6b9c47067df849c64f6d6d1c26f48ba7/raw/3c17e4ddf283752c173f981512b3c23dc7668555/CNAB.txt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"ea8af7175e9c3a7121e749ffd0813f8d0c51bf92"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - 4580:8277:181238:193FBA:5A98A103
+      Content-Length:
+      - '1028'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 02 Mar 2018 00:56:51 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-gru17124-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      X-Timer:
+      - S1519952212.894598,VS0,VE1
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 657cc5cc29eac30da6c4dde636a5689315f6440e
+      Expires:
+      - Fri, 02 Mar 2018 01:01:51 GMT
+      Source-Age:
+      - '78'
+    body:
+      encoding: UTF-8
+      string: |-
+        3485734857398475938475934759384753****3453453453
+        5234234234247772347122221231233123****7687345677
+        3123817298371923878677776312736777****1313677712
+        2342342342348762837468237648273648****0099234234
+        1201803010000010001040561476471234****7890233000
+        2123312312312312312777632847878723****9987723333
+        2348756384761238734687346587638473****1231231233
+        3123817298371923878677776312736777****1313677712
+        1201803110000120000671962130091234****3324090002
+        5234234234247772347122221231233123****7687345677
+        2348756384761238734687346587638473****1231231233
+        3123817298371923878677776312736777****1313677712
+        4201806010000015400671962130091234****6678100000
+        8768763284762837462837468762342344****1222123222
+        3123817298371923878677776312736777****1313677712
+        9234247675656345676153465765466228****9090000000
+        4201806010000099100040561476471234****2231100000
+        2123312312312312312777632847878723****9987723333
+        8768763284762837462837468762342344****1222123222
+        2344523454545716354765172763677677****8778249878
+        3123817298371923878677776312736777****1313677712
+    http_version: 
+  recorded_at: Fri, 02 Mar 2018 00:56:52 GMT
+recorded_with: VCR 3.0.3
