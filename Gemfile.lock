@@ -84,6 +84,7 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    pg (0.21.0)
     public_suffix (3.0.2)
     puma (3.11.2)
     rack (2.0.4)
@@ -106,6 +107,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.5)
       actionpack (= 5.1.5)
       activesupport (= 5.1.5)
@@ -174,8 +180,10 @@ DEPENDENCIES
   factory_bot_rails
   httparty (~> 0.16.0)
   listen (>= 3.0.5, < 3.2)
+  pg (~> 0.21)
   puma (~> 3.7)
   rails (~> 5.1.5)
+  rails_12factor
   rspec-rails (~> 3.7)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -183,6 +191,9 @@ DEPENDENCIES
   swagger-docs
   vcr (~> 3.0.3)
   webmock
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.1
