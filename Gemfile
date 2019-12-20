@@ -5,7 +5,7 @@ gem 'rails', '~> 5.1.5'
 # ruby version
 ruby '2.5.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 # Http request
 gem 'httparty', '~> 0.16.0'
 # Ruby gem to load environment variables
